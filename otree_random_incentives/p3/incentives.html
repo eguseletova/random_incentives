@@ -1,0 +1,16 @@
+{{ block title }}Incentives{{ endblock }}
+{{ block content }}
+
+    <p>
+        The computer drew the following number at random: {{player.random_number}}.
+    </p>
+
+    <p>
+        Since this number is equal to or smaller than {{Constants.incentive_chance}}, you will continue to the next part of the study.
+    </p>
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}

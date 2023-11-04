@@ -1,0 +1,20 @@
+{{ block title }}No Incentives{{ endblock }}
+{{ block content }}
+
+    <p>
+        The computer drew the following number at random: {{player.random_number}}.
+    </p>
+
+    <p>
+        Since this number is greater than {{Constants.incentive_chance}}, the study is over.
+    </p>
+
+    <p>
+        Thank you for your participation!
+    </p>
+
+    {{formfields}}
+
+    {{next_button}}
+
+{{ endblock }}
